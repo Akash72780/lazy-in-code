@@ -1,0 +1,29 @@
+<div class="container pad-top mt-3">
+    <h3 class="font-italic mt-3">Apparel Collection</h3></td>
+    <table class="table table-striped table-inverse table-responsive table-hover mt-3">
+        <thead>
+            <tr>
+              <th>Apparel Number</th>
+              <th>Apparel Name</th>
+              <th>Price</th>
+              <th>Type</th>
+              <th>Brand</th>
+              <th>Design</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr ng-repeat="apparel in listofApparel">
+            <td>{{apparel.prodId}}</td>
+            <td>{{apparel.prodName}}</td>
+            <td>{{apparel.price}}</td>
+            <td>{{apparel.type}}</td>
+            <td>{{apparel.brand}}</td>
+            <td>{{apparel.design}}</td>
+            <td>
+                <a class="btn btn-primary" ng-click="addToCart(apparel)">Add to Cart</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
